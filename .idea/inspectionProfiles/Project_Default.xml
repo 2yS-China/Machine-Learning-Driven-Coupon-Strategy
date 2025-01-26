@@ -1,0 +1,65 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="46" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N801" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="open3d.*" />
+          <option value="slicer.mrmlScene" />
+          <option value="vtk.vtkCutter" />
+          <option value="vtk.vtkPlane" />
+          <option value="vtk.vtkStripper" />
+          <option value="vtk.vtkIdList" />
+          <option value="vtk.vtkNameColors" />
+          <option value="vtk.vtkSTLReader" />
+          <option value="vtk.vtkPolyDataMapper" />
+          <option value="vtk.vtkActor" />
+          <option value="vtk.vtkRenderer" />
+          <option value="vtk.vtkRenderWindow" />
+          <option value="vtk.vtkRenderWindowInteractor" />
+          <option value="vtk.vtkNamedColors" />
+          <option value="vtk.util" />
+          <option value="vtk.vtkPlaneSource" />
+          <option value="vtk.vtkMassProperties" />
+          <option value="vtk.vtkCenterOfMass" />
+          <option value="vtk.vtkInteractorStyleTrackballCamera" />
+          <option value="vtk.vtkPoints" />
+          <option value="vtk.vtkGlyph3D" />
+          <option value="vtk.vtkSphereSource" />
+          <option value="vtk.vtkColorTransferFunction" />
+          <option value="vtk.vtkUnsignedCharArray" />
+          <option value="interactor_stl_points.MouseInteractor.on_mouse_move" />
+          <option value="vtk.vtkPointPicker" />
+          <option value="vtk.vtkCursorType" />
+          <option value="vtk.vtkMath" />
+          <option value="vtk.vykMath" />
+          <option value="vtk.vtkTransform" />
+          <option value="vtk.vtkCubeSource" />
+          <option value="vtk.vtkCylinderSource" />
+          <option value="vtk.vtkCellPicker" />
+          <option value="vtk.vtkMultiBlockDataSet" />
+          <option value="vtk.vtkCompositeDataDisplayAttributes" />
+          <option value="vtk.vtkKochanekSpline" />
+          <option value="Resources.SrcCode.Measurement_Module.TT_TG.NewMeasureWay.NewMeasure.*" />
+          <option value="vtk.*" />
+          <option value="bool.mean" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
