@@ -1,23 +1,13 @@
-#机器学习驱动的优惠券策略
-此项目目的是找到最优优惠劵分配策略。
-首先使用data_visualization.py进行数据预处理，分析结果，数据会被清洗为以下特征：
+The project titled "Machine Learning-Driven Coupon Strategy" aims to find the optimal coupon allocation strategy. First, data preprocessing and analysis are performed using data_visualization.py. The data is cleaned and the following features are derived:
 
-用户维度（用户消费金额、平均订单金额、购买频率、订单数）
-商户维度（商户订单量、销售额、邮费占比）
-RFM 分析（Recency 近期消费情况、Frequency 频率、Monetary 消费金额）
-优惠券使用记录（是否使用优惠券、使用率）
- 
-接下来运行代码behavior_model.py，我使用了 随机森林、XGBoost、深度神经网络（DNN） 进行预测。
+User Dimensions: User's spending amount, average order amount, purchase frequency, number of orders
+Merchant Dimensions: Merchant order volume, sales, and shipping cost ratio
+RFM Analysis: Recency (recent consumption behavior), Frequency (purchase frequency), Monetary (spending amount)
+Coupon Usage Record: Whether the coupon was used and the usage rate
+Next, the code behavior_model.py is run, where I used Random Forest, XGBoost, and Deep Neural Networks (DNN) for prediction.
 
-随机森林作用：基于特征学习 用户是否会使用优惠券
-结果：模型返回 0 或 1（是否使用优惠券）
-
-XGBoost作用：相比随机森林，XGBoost 能更好地处理非线性关系，提升预测效果
-结果：预测用户是否会使用优惠券，并计算准确率、F1 分数等
-
-深度神经网络作用：使用深度学习，寻找复杂的优惠券使用模式
-结果：最终预测用户是否会使用优惠券
-
-
-最终，在模型训练完成后，使用概率预测和分箱策略进行优化，得到投放策略。
+Random Forest: Learns based on features whether a user will use a coupon. The result is a binary prediction (0 or 1—whether the coupon will be used or not).
+XGBoost: Compared to Random Forest, XGBoost is better at handling non-linear relationships, improving prediction performance. The result is the prediction of whether a user will use the coupon, with metrics such as accuracy and F1 score.
+Deep Neural Networks (DNN): Uses deep learning to discover complex patterns in coupon usage. The result is the final prediction of whether a user will use the coupon.
+Finally, after the model is trained, a probability prediction and binning strategy are applied for optimization, leading to the development of the allocation strategy.
 
